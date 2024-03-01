@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.gparent{
+    width: 100%;
+    float: left;
+    height: 600px;
+    margin: 100px auto;
+    
+
+}
+.flip-box{
+    width: 300px;
+    height: 50px;
+    text-align: center;
+    margin: auto;
+    color: navy;
+    border: 4px solid navy;
+    border-radius: 10px;
+
+
+    }
+.parent{
+    width: 400px;
+    height: 400px;
+    margin: 50px 50px;
+    /* border: 1px solid black; */
+    position: relative;
+    perspective: 800px;
+    float: left;
+}
+.box{
+width: 100%;
+height: 100%;
+background-color: darkblue;
+/* margin:100px 100px; */
+background: url(images/most-romantic-places-in-poland.jpeg) no-repeat;
+background-size: cover;
+/* display: flex; */
+border-radius: 25px;
+position: absolute;
+top: 0;
+left: 0;
+transition: 1s;
+backface-visibility: hidden;
+transform-style: preserve-3d;
+
+
+
+}
+.box-inner{
+
+margin:90px 50px;
+width: 300px;
+height: 250px;
+transition: 1s;
+transform: translateZ(30px);
+backface-visibility: hidden;
+/* background-color: firebrick;  */
+
+
+}
+.parent .box {
+transform: rotateY(0deg);
+
+}
+
+.parent .box2{
+transform: rotateY(-180deg);
+}
+.box-inner img{
+margin-left: 120px;
+margin-bottom: 25px;
+
+
+}
+.box-inner h1{
+color: orange;
+text-align: center;
+margin-bottom: 35px;
+
+
+}
+button{
+width: 100px;
+height: 30px;
+border: 2px solid orange;
+margin-left: 105px;
+
+}
+.box-inner p{
+text-align: justify;
+color: white;
+
+}
+.box2{
+width: 100%;
+height: 100%;
+background-color: darkblue;
+background: url(images/destination.jpeg) no-repeat;
+background-size: cover;
+
+border-radius: 25px;
+position: absolute;
+top: 0;
+left: 0%;
+transition: 1s;
+backface-visibility: hidden;
+transform-style: preserve-3d;
+
+
+}
+.parent:hover .box {
+transform: rotateY(180deg);
+}
+.parent:hover .box2{
+transform: rotateY(0deg);
+}
+
+
+.parent2{
+width: 800px;
+    height: 400px;
+    margin: 50px 50px;
+    /* border: 1px solid red; */
+    position: relative;
+    perspective: 800px;
+    float: left;
+}
+.box3{
+width: 100%;
+height: 100%;
+background-color: darkblue;
+background: url(images/beach2.jpeg) no-repeat;
+background-size: cover;
+
+border-radius: 25px;
+position: absolute;
+top: 0;
+left: 0%;
+transition: 1s;
+backface-visibility: hidden;
+transform-style: preserve-3d;
+}
+.box-inner1{
+ margin:90px 50px;
+width: 700px;
+height: 250px;
+transition: 1s;
+transform: translateZ(50px);
+backface-visibility: hidden;
+/* background-color: firebrick;  */
+}
+.box4{
+width: 100%;
+height: 100%;
+background-color: darkblue;
+/* margin:100px 100px; */
+background: url(images/beach.webp) no-repeat;
+background-size: cover;
+
+border-radius: 25px;
+position: absolute;
+top: 0;
+left: 0;
+transition: 1s;
+backface-visibility: hidden;
+transform-style: preserve-3d;
+
+}
+.parent2 .box4 {
+transform: rotateX(0deg);
+
+}
+
+.parent2 .box3{
+transform: rotateX(-180deg);
+}
+.box-inner1 img{
+margin-left: 20px;
+margin-bottom: 25px;
+
+
+}
+.box-inner1 h1{
+color: orange;
+
+margin-bottom: 35px;
+
+
+}
+.parent2 button{
+width: 100px;
+height: 30px;
+border: 2px solid orange;
+margin-left: 10px;
+
+}
+.parent2:hover .box4 {
+transform: rotateX(180deg);
+}
+.parent2:hover .box3{
+transform: rotateX(0deg);
+}
